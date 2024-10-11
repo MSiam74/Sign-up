@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Sign up/login</title>
+  </head>
+  <body>
+    <h1 id="signUp">Sign up</h1>
+    <div id="container">
+      <div id="box">
+        <form action="/Sign" method="post">
+          <label for="fName"></label>
+          <input
+            type="text"
+            id="fName"
+            name="First Name"
+            placeholder="First name"
+          />
+          <label for="lName"></label>
+          <input
+            type="text"
+            id="lName"
+            name="Last Name"
+            placeholder="Last name"
+          />
+          <label for="email"></label>
+          <input type="email" name="email" id="email" placeholder="Email" />
+          <label for="password"></label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="password"
+          />
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="confirm password"
+          />
+
+          <input type="submit" name="submit" id="submit" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
