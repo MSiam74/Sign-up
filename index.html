@@ -9,10 +9,14 @@
   <body>
     <h1 id="signUp">Sign up</h1>
     <div id="container">
+      <!-- #container: Acts as the main wrapper for this form, controlling the overall layout, positioning, and background style. It handles the centering of the entire form section on the page. -->
+
       <div id="box">
+        <!-- #box: This is more focused on the form itself, managing the layout of the input fields and buttons. It allows for easier styling and adjustments specific to the form elements. -->
         <form action="/Sign" method="post">
           <label for="fName"></label>
           <input
+            class="input"
             type="text"
             id="fName"
             name="First Name"
@@ -20,29 +24,42 @@
           />
           <label for="lName"></label>
           <input
+            class="input"
             type="text"
             id="lName"
             name="Last Name"
             placeholder="Last name"
           />
           <label for="email"></label>
-          <input type="email" name="email" id="email" placeholder="Email" />
+          <input
+            class="input"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email"
+          />
           <label for="password"></label>
           <input
+            class="input"
             type="password"
             name="password"
             id="password"
             placeholder="password"
           />
           <input
+            class="input"
             type="password"
             name="password"
             id="password"
             placeholder="confirm password"
           />
 
-          <input type="submit" name="submit" id="submit" />
+          <input type="submit" name="submit" id="submit" value="Sign up" />
         </form>
+
+        <p id="paragraph">
+          Already have an account? <a href="index1.html">login</a> here
+        </p>
       </div>
     </div>
   </body>

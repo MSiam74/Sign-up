@@ -5,10 +5,22 @@
   background-color: aquamarine;
 }
 
+h1 {
+  margin-top: 2rem;
+}
+
 #container {
   height: 70vh;
-  width: 40vw;
+  width: 25vw;
   background-color: white;
+  margin: auto; /* This centers the element horizontally */
+  /* to align box in center*/
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+
+  margin-top: 5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -16,8 +28,53 @@
 }
 
 #box {
+  /*to align input elements in center*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+input {
+  width: 60%;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: wheat;
+  border: 0.5px solid black;
+  border-radius: 5px;
+}
+
+form {
+  background-color: white;
+}
+
+#submit {
+  color: white;
+  background-color: black;
+  border: none;
+  border-radius: 5px;
+  margin-top: auto;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+#submit:hover {
+  background-color: gray;
+  color: black;
+  font-weight: bold;
+}
+
+a[href] {
+  text-decoration: none;
+  background-color: white;
+  color: red;
+}
+
+p {
+  background-color: white;
 }
